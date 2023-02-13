@@ -1,0 +1,41 @@
+{
+  "name": "TEST",
+  "description": "TEST ",
+  "version": "1",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "identity",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "tabCapture",
+    "cookies",
+    "contextMenus",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "/popup/popup.html",
+    "default_title": "camera",
+    "default_icon": {
+      "16": "logo128x128.png",
+      "24": "logo128x128.png",
+      "32": "logo128x128.png"
+    }
+  },
+  "icons": {
+    "16": "logo128x128.png",
+    "48": "logo128x128.png",
+    "128": "logo128x128.png"
+  },
+  "web_accessible_resources": [
+    "content-get-device-access.html"
+  ]
+}

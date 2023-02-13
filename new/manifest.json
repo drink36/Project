@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Floating Webcam",
+    "version": "1.0",
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "desktopCapture",
+        "windows",
+        "webNavigation",
+        "tabs",
+        "tabCapture",
+        "notifications",
+        "storage",
+        "clipboardWrite",
+        "contextMenus"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
